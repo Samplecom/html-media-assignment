@@ -1,0 +1,76 @@
+8. -7 Create a table to display a con8erence schedule. Each row corresponds to a time slot, and each column
+corresponds to a room. Some time slots might have multiple sessions running simultaneously in di88erent
+rooms. Utilize rowspan and colspan attributes as necessary to accommodate this complex schedule.
+(use table attribute “cellpadding”. to give extra padding in each table cell ).
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>core html</title>
+    </head>
+       <style>
+            table, th, td {
+                border:1px solid black;
+              }
+              .special-cell {
+            padding: 30px; 
+        }
+        div {
+  border: 1px solid black;
+  margin-top: 50px;
+  margin-bottom:50px;
+  margin-right: 300px;
+  margin-left:60px;
+  background-color: white;
+}
+        
+    </style>
+    <div>
+    <body>
+        <table>
+            <h2>conferance schedule</h2>
+            <tr>
+                <th class="special-cell">TIME</th>
+                <th class="special-cell">room 1</th>
+                <th>room 2</th>
+                <th>room 3</th>
+                <th>room 4</th>
+            </tr>
+            <tr>
+                <td rowspan="3">9:00 AM - 10:00 AM</td>
+                <td rowspan="2">keynote</td>
+                <td>season A</td>
+                <td>season B</td>
+                <td rowspan="3">season C</td>
+            </tr>
+            <tr> 
+                <td> season D</td>
+                <td>season E</td>
+            </tr>
+            <tr>
+                <td>10:30 AM - 11:30 AM</td>
+                <td colspan="2">season F</td>
+            </tr>
+           <tr>
+            <td>
+                12:00 PM - 1:00 PM
+            </td>
+            <td colspan="4">Lunch break</td>
+
+           </tr>
+           <tr>
+            <td rowspan="2">1:00 PM - 2:00 PM </td>
+            <td> season G</td>
+            <td rowspan="2">season H</td>
+            <td>season I</td>
+            <td>sason J</td>
+           </tr>
+           <tr>
+            <td> season K</td>
+            <td>season L</td>
+            <td>season M</td>
+           </tr>
+
+        </table>
+        </table>
+    </body>
+</html>
