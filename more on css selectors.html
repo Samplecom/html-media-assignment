@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav >h2{
+            color: red;
+        }
+        nav a{
+            color: green;
+        }
+        ul {
+            color: red;
+        }
+        a[href]{
+            color: red;
+            text-decoration: none;
+        }
+        a[class="active"]{
+            color: blue;
+            text-decoration: underline;
+        }
+        a[target="_self"]{
+            background-color: gray;
+        }
+        p:last-child::after{
+       content: ".......";
+        }
+        li::marker{
+            color: green;
+        }
+        p:nth-child(even)::first-letter{
+            color: red;
+            font-size: 25px;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <h2>TIO</h2>
+        <div>
+            <h2>menu</h2>
+            <ul>
+                
+                    <li><a href="@">home</a></li>
+                    <li><a href="#" class="active" target="_self">about</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="contact">contact</a></li>
+                 </ul>
+             <p> the time of india</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam quia, maiores laborum dolorem culpa porro dolor vel, consequuntur neque unde accusantium quaerat impedit, provident fugit magni beatae possimus doloremque nisi!
+          </p>
+          <p>read more articles</p>
+            </div>
+    </nav>
+</body>
+</html>
+*****************************************
+2. selectors
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1::after{
+            content: ", add any random words";
+        }
+        h1::before{
+            content: "using any of the";
+        }
+    </style>
+
+</head>
+<body>
+    <h1>pseduo element selector</h1>
+</body>
+</html>
+*************************************************
+3.slector
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            background-color: lightblue;
+            color: white;
+            margin-top: 150px;
+            margin-left: 150px;
+            border-radius: 10px;
+           font-size: 20px;
+           padding: 10px 20px;
+        }
+        button:hover{
+            cursor: pointer;
+            box-shadow: 10px 15px gray;
+        }
+    </style>
+</head>
+<body>
+    <button>suman</button>
+</body>
+</html>
+**********************************************
+4. selector
